@@ -1,0 +1,18 @@
+@use 'sass:math';
+
+
+// COLORS
+$blue-react: #00D8FF;
+$ice: #DEEBF8;
+$white: #FFFFFF;
+$dark-black: #21222A;
+$light-black: #282D35;
+$very-light-black: #33373E;
+
+
+//* Function: rem()
+//* DESCRIPTION: px -> rem conversion
+@function rem($px, $base: 16px) {
+  @return math.div($px, $base) * 1rem;
+}
+
