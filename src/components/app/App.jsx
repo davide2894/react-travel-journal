@@ -1,12 +1,12 @@
 import './App.scss';
-import Navbar from '../navbar/Navbar';
+import Header from '../navbar/Header';
 import travelEntriesData from '../../data/data';
 import Entry from '../entry/Entry';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Header/>
       {travelEntriesData.map((entryData) => {
         console.log(<Entry/>);
         return <Entry 

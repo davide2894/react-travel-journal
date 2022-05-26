@@ -1,0 +1,21 @@
+@import '../../_shared';
+
+.header {
+    background-color: $salmon;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 40px;
+
+    &__logo {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__title {
+        color: $white;
+        font-size: $font-size-medium;
+    }
+}
