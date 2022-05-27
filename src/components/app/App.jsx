@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Header/>
       {travelEntriesData.map((entryData) => {
-        console.log(<Entry/>);
+        
         return <Entry 
           key={entryData.id}
           entryData={entryData}
