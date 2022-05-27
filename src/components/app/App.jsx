@@ -7,13 +7,15 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      {travelEntriesData.map((entryData) => {
-        
-        return <Entry 
-          key={entryData.id}
-          entryData={entryData}
-        />
-      })}
+      <section className="entries">
+        {travelEntriesData.map((entryData) => {
+          
+          return <Entry 
+            key={entryData.id}
+            entryData={entryData}
+          />
+        })}
+      </section>
     </div>
   );
 }

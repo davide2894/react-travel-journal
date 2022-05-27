@@ -15,8 +15,11 @@ export default function Entry(props) {
             <div className="entry__childContainer entry__infoContainer">
                 <div className="entry__locationContainer">
                     <div className="entry__locationRow">
-                        <img className="icon entry__locationPinIcon" src={props.entryData.pinIcon}></img>
-                        <h2 className="entry__location">{props.entryData.location}</h2>
+                        <div className="entry__iconAndLocation">
+                            <img className="icon entry__locationPinIcon" src={pinIcon} />
+                            <h2 className="entry__location">{props.entryData.location}</h2>
+                        </div>
+                        <a className="entry__googleMapsUrl" href={props.entryData.googleMapsUrl}>View on Google Maps</a>
                     </div>
                     <h3 className="entry__locationRow entry__title">{props.entryData.title}</h3>
                 </div>

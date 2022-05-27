@@ -1,0 +1,85 @@
+@import "../../shared.scss";
+
+.entry {
+    display: flex;
+    margin: 36px 40px;
+
+    &__imgContainer {
+        width: 125px;
+        height: 168px;
+        margin-right: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    &__infoContainer {
+        flex-basis: 60%
+    }
+
+    &__locationRow {
+        display: flex;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+
+        @media only screen and(min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+
+    &__iconAndLocation {
+        display: flex;
+    }
+
+    &__locationPinIcon {
+        width: 7px;
+        height: 10px;
+        margin-right: 4px;
+    }
+
+    &__location {
+        text-transform: uppercase;
+        margin-right: 12px;
+        letter-spacing: 3px;
+    }
+
+    &__location,
+    &__googleMapsUrl,
+    &__dates,
+    &__description {
+        @include text-small;
+    }
+
+    &__googleMapsUrl {
+        text-decoration: underline;
+        color: $spanish-gray;
+    }
+
+    &__title {
+        @include text-big;
+        font-weight: $font-weight-bold;
+        margin-bottom: 14px;
+        text-align: left;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    &__dates {
+        font-weight: $font-weight-bold;
+        margin-bottom: 9px;
+    }
+
+    &__description {
+        color: $description-gray;
+    }
+}
