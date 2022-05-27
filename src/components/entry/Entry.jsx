@@ -2,7 +2,7 @@ import "./Entry.scss";
 import pinIcon from "../../assets/icons/pin_icon.png";
 
 export default function Entry(props) {
-    console.log(props);
+
     return(
         <div className="entry">
             <div className="entry__childContainer entry__imgContainer">
